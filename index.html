@@ -1,156 +1,130 @@
 <!DOCTYPE html>
-<html lang="en"     class="scroll-smooth">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width" />
-    <link rel="stylesheet" href="css/styles.css" />
-    <title>Portfolio Website</title>
-    <style>
+<html lang="en" class="scroll-smooth">
 
-.cursor {
-    width: 40px;
-    height: 40px;
-    border: 2px solid white;
-    border-radius: 50%;
-    position: absolute;
-    transition-duration: 200ms;
-    transition-timing-function: ease-out;
-    animation: cursorAnim .5s infinite alternate;
-    pointer-events: none;
-}
-
-.cursor::after {
-    content: "";
-    width: 20px;
-    height: 20px;
-    position: absolute;
-    border: 8px solid gray;
-    border-radius: 50%;
-    opacity: .5;
-    top: 8px;
-    left: 8px;
-    animation: cursorAnim2 .5s infinite alternate;
-}
-
-@keyframes cursorAnim {
-    from {
-        transform: scale(1);
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="shortcut icon" href="images\favicon.ico" type="image/x-icon">
+  <title>Portfolio Website</title>
+  <style>
+    .cursor {
+      width: 40px;
+      height: 40px;
+      border: 2px solid white;
+      border-radius: 50%;
+      position: absolute;
+      transition-duration: 200ms;
+      transition-timing-function: ease-out;
+      animation: cursorAnim .5s infinite alternate;
+      pointer-events: none;
     }
-    to {
+
+    .cursor::after {
+      content: "";
+      width: 20px;
+      height: 20px;
+      position: absolute;
+      border: 8px solid gray;
+      border-radius: 50%;
+      opacity: .5;
+      top: 8px;
+      left: 8px;
+      animation: cursorAnim2 .5s infinite alternate;
+    }
+
+    @keyframes cursorAnim {
+      from {
+        transform: scale(1);
+      }
+
+      to {
         transform: scale(.7);
+      }
     }
-}
 
-@keyframes cursorAnim2 {
-    from {
+    @keyframes cursorAnim2 {
+      from {
         transform: scale(1);
-    }
-    to {
+      }
+
+      to {
         transform: scale(.4);
+      }
     }
-}
 
-@keyframes cursorAnim3 {
-    0% {
+    @keyframes cursorAnim3 {
+      0% {
         transform: scale(1);
-    }
-    50% {
+      }
+
+      50% {
         transform: scale(3);
-    }
-    100% {
+      }
+
+      100% {
         transform: scale(1);
         opacity: 0;
+      }
     }
-}
 
-.expand {
-    animation: cursorAnim3 .5s forwards;
-    border: 1px solid red;
-}
+    .expand {
+      animation: cursorAnim3 .5s forwards;
+      border: 1px solid red;
+    }
+  </style>
+</head>
 
-
-    </style>
-  </head>
-  <body
-    class="bg-slate-900 leading-relaxed text-slate-400 antialiased selection:bg-teal-300 selection:text-teal-900"
-  >
+<body class="bg-slate-900 leading-relaxed text-slate-400 antialiased selection:bg-teal-300 selection:text-teal-900">
   <div class="__variable_20b187 group/spotlight relative">
     <!-- scroll effect  -->
-    <div
-      class="pointer-events-none fixed inset-0 z-30 transition duration-300 lg:absolute"
-      style="
+    <div class="pointer-events-none fixed inset-0 z-30 transition duration-300 lg:absolute" style="
         background: radial-gradient(
           600px circle at 0px 0px,
           rgba(29, 78, 216, 0.15),
           transparent 80%
         );
-      "
-    ></div>
+      "></div>
 
-    <div
-      class="mx-auto min-h-screen max-w-screen-xl px-6 py-12 font-sans md:px-12 md:py-20 lg:px-24 lg:py-0"
-    >
+    <div class="mx-auto min-h-screen max-w-screen-xl px-6 py-12 font-sans md:px-12 md:py-20 lg:px-24 lg:py-0">
       <div class="lg:flex lg:justify-between lg:gap-4">
         <!-- header section -->
-        <header
-          class="lg:sticky lg:top-0 lg:flex lg:max-h-screen lg:w-1/2 lg:flex-col lg:justify-between lg:py-24"
-        >
+        <header class="lg:sticky lg:top-0 lg:flex lg:max-h-screen lg:w-1/2 lg:flex-col lg:justify-between lg:py-24">
           <div>
-            <h1
-              class="text-4xl font-bold tracking-tight text-slate-200 sm:text-5xl"
-            >
+            <h1 class="text-4xl font-bold tracking-tight text-slate-200 sm:text-5xl">
               <a href="/">Sanchita Jindal</a>
             </h1>
-            <h2
-              class="mt-3 text-lg font-medium tracking-tight text-slate-200 sm:text-xl"
-            >
+            <h2 class="mt-3 text-lg font-medium tracking-tight text-slate-200 sm:text-xl">
               Frontend Developer
             </h2>
             <p class="mt-4 max-w-xs leading-normal">
-             Exploring different technologies to make world of web a better place.
+              Exploring different technologies to make world of web a better place.
             </p>
-            <nav
-              class="nav hidden lg:block"
-              aria-label="In-page jump links"
-            >
+            <nav class="nav hidden lg:block" aria-label="In-page jump links">
               <ul class="mt-16 w-max">
                 <li>
-                  <a
-                    class="group flex items-center py-3 active"
-                    href="#about"
-                  >
+                  <a class="group flex items-center py-3" href="#about">
                     <span
-                      class="nav-indicator mr-4 h-px w-8 bg-slate-600 transition-all group-hover:w-16 group-hover:bg-slate-200 group-focus-visible:w-16 group-focus-visible:bg-slate-200 motion-reduce:transition-none"
-                    ></span>
+                      class="nav-indicator mr-4 h-px w-8 bg-slate-600 transition-all group-hover:w-16 group-hover:bg-slate-200 group-focus-visible:w-16 group-focus-visible:bg-slate-200 motion-reduce:transition-none"></span>
                     <span
-                      class="nav-text text-xs font-bold uppercase tracking-widest text-slate-500 group-hover:text-slate-200 group-focus-visible:text-slate-200"
-                      >About</span
-                    >
+                      class="nav-text text-xs font-bold uppercase tracking-widest text-slate-500 group-hover:text-slate-200 group-focus-visible:text-slate-200">About</span>
                   </a>
                 </li>
                 <li>
-                  <a
-                    class="group flex items-center py-3"
-                    href="#educational qualifications"
-                  >
+                  <a class="group flex items-center py-3" href="#educational-qualifications">
                     <span
-                      class="nav-indicator mr-4 h-px w-8 bg-slate-600 transition-all group-hover:w-16 group-hover:bg-slate-200 group-focus-visible:w-16 group-focus-visible:bg-slate-200 motion-reduce:transition-none"
-                    ></span>
+                      class="nav-indicator mr-4 h-px w-8 bg-slate-600 transition-all group-hover:w-16 group-hover:bg-slate-200 group-focus-visible:w-16 group-focus-visible:bg-slate-200 motion-reduce:transition-none"></span>
                     <span
-                      class="nav-text text-xs font-bold uppercase tracking-widest text-slate-500 group-hover:text-slate-200 group-focus-visible:text-slate-200"
-                      >Educational Qualifications</span
-                    >
+                      class="nav-text text-xs font-bold uppercase tracking-widest text-slate-500 group-hover:text-slate-200 group-focus-visible:text-slate-200">Educational
+                      Qualifications</span>
                   </a>
                 </li>
                 <li>
                   <a class="group flex items-center py-3" href="#skills">
                     <span
-                      class="nav-indicator mr-4 h-px w-8 bg-slate-600 transition-all group-hover:w-16 group-hover:bg-slate-200 group-focus-visible:w-16 group-focus-visible:bg-slate-200 motion-reduce:transition-none"
-                    ></span>
+                      class="nav-indicator mr-4 h-px w-8 bg-slate-600 transition-all group-hover:w-16 group-hover:bg-slate-200 group-focus-visible:w-16 group-focus-visible:bg-slate-200 motion-reduce:transition-none"></span>
                     <span
-                      class="nav-text text-xs font-bold uppercase tracking-widest text-slate-500 group-hover:text-slate-200 group-focus-visible:text-slate-200"
-                      >Skills</span
-                    >
+                      class="nav-text text-xs font-bold uppercase tracking-widest text-slate-500 group-hover:text-slate-200 group-focus-visible:text-slate-200">Skills</span>
                   </a>
                 </li>
               </ul>
@@ -158,84 +132,45 @@
           </div>
           <ul class="ml-1 mt-8 flex items-center" aria-label="Social media">
             <li class="mr-5 text-xs shrink-0">
-              <a
-                class="block hover:text-slate-200"
-                href="#"
-                target="_blank"
-                rel="noreferrer noopener"
-                aria-label="GitHub (opens in a new tab)"
-                title="GitHub"
-              >
+              <a class="block hover:text-slate-200" href="https://www.github.com/SanchitaJindal" target="_blank" rel="noreferrer noopener"
+                aria-label="GitHub (opens in a new tab)" title="GitHub">
                 <span class="sr-only">GitHub</span>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 16 16"
-                  fill="currentColor"
-                  class="h-6 w-6"
-                  aria-hidden="true"
-                >
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="h-6 w-6"
+                  aria-hidden="true">
                   <path
-                    d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"
-                  ></path>
+                    d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z">
+                  </path>
                 </svg>
               </a>
             </li>
             <li class="mr-5 text-xs shrink-0">
-              <a
-                class="block hover:text-slate-200"
-                href="#"
-                target="_blank"
-                rel="noreferrer noopener"
-                aria-label="LinkedIn (opens in a new tab)"
-                title="LinkedIn"
-              >
+              <a class="block hover:text-slate-200" href="#" target="_blank" rel="noreferrer noopener"
+                aria-label="LinkedIn (opens in a new tab)" title="LinkedIn">
                 <span class="sr-only">LinkedIn</span>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 24 24"
-                  fill="currentColor"
-                  class="h-6 w-6"
-                  aria-hidden="true"
-                >
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="h-6 w-6"
+                  aria-hidden="true">
                   <path
-                    d="M20.5 2h-17A1.5 1.5 0 002 3.5v17A1.5 1.5 0 003.5 22h17a1.5 1.5 0 001.5-1.5v-17A1.5 1.5 0 0020.5 2zM8 19H5v-9h3zM6.5 8.25A1.75 1.75 0 118.3 6.5a1.78 1.78 0 01-1.8 1.75zM19 19h-3v-4.74c0-1.42-.6-1.93-1.38-1.93A1.74 1.74 0 0013 14.19a.66.66 0 000 .14V19h-3v-9h2.9v1.3a3.11 3.11 0 012.7-1.4c1.55 0 3.36.86 3.36 3.66z"
-                  ></path>
+                    d="M20.5 2h-17A1.5 1.5 0 002 3.5v17A1.5 1.5 0 003.5 22h17a1.5 1.5 0 001.5-1.5v-17A1.5 1.5 0 0020.5 2zM8 19H5v-9h3zM6.5 8.25A1.75 1.75 0 118.3 6.5a1.78 1.78 0 01-1.8 1.75zM19 19h-3v-4.74c0-1.42-.6-1.93-1.38-1.93A1.74 1.74 0 0013 14.19a.66.66 0 000 .14V19h-3v-9h2.9v1.3a3.11 3.11 0 012.7-1.4c1.55 0 3.36.86 3.36 3.66z">
+                  </path>
                 </svg>
               </a>
             </li>
             <li class="mr-5 text-xs shrink-0">
-              <a
-                class="block hover:text-slate-200"
-                href="#"
-                target="_blank"
-                rel="noreferrer noopener"
-                aria-label="Instagram (opens in a new tab)"
-                title="Instagram"
-              >
+              <a class="block hover:text-slate-200" href="https://www.instagram.com/sanchitaaaa.jindal/" target="_blank"
+                rel="noreferrer noopener" aria-label="Instagram (opens in a new tab)" title="Instagram">
                 <span class="sr-only">Instagram</span>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 1000 1000"
-                  fill="currentColor"
-                  class="h-6 w-6"
-                  aria-hidden="true"
-                >
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000" fill="currentColor" class="h-6 w-6"
+                  aria-hidden="true">
                   <path
-                    d="M295.42,6c-53.2,2.51-89.53,11-121.29,23.48-32.87,12.81-60.73,30-88.45,57.82S40.89,143,28.17,175.92c-12.31,31.83-20.65,68.19-23,121.42S2.3,367.68,2.56,503.46,3.42,656.26,6,709.6c2.54,53.19,11,89.51,23.48,121.28,12.83,32.87,30,60.72,57.83,88.45S143,964.09,176,976.83c31.8,12.29,68.17,20.67,121.39,23s70.35,2.87,206.09,2.61,152.83-.86,206.16-3.39S799.1,988,830.88,975.58c32.87-12.86,60.74-30,88.45-57.84S964.1,862,976.81,829.06c12.32-31.8,20.69-68.17,23-121.35,2.33-53.37,2.88-70.41,2.62-206.17s-.87-152.78-3.4-206.1-11-89.53-23.47-121.32c-12.85-32.87-30-60.7-57.82-88.45S862,40.87,829.07,28.19c-31.82-12.31-68.17-20.7-121.39-23S637.33,2.3,501.54,2.56,348.75,3.4,295.42,6m5.84,903.88c-48.75-2.12-75.22-10.22-92.86-17-23.36-9-40-19.88-57.58-37.29s-28.38-34.11-37.5-57.42c-6.85-17.64-15.1-44.08-17.38-92.83-2.48-52.69-3-68.51-3.29-202s.22-149.29,2.53-202c2.08-48.71,10.23-75.21,17-92.84,9-23.39,19.84-40,37.29-57.57s34.1-28.39,57.43-37.51c17.62-6.88,44.06-15.06,92.79-17.38,52.73-2.5,68.53-3,202-3.29s149.31.21,202.06,2.53c48.71,2.12,75.22,10.19,92.83,17,23.37,9,40,19.81,57.57,37.29s28.4,34.07,37.52,57.45c6.89,17.57,15.07,44,17.37,92.76,2.51,52.73,3.08,68.54,3.32,202s-.23,149.31-2.54,202c-2.13,48.75-10.21,75.23-17,92.89-9,23.35-19.85,40-37.31,57.56s-34.09,28.38-57.43,37.5c-17.6,6.87-44.07,15.07-92.76,17.39-52.73,2.48-68.53,3-202.05,3.29s-149.27-.25-202-2.53m407.6-674.61a60,60,0,1,0,59.88-60.1,60,60,0,0,0-59.88,60.1M245.77,503c.28,141.8,115.44,256.49,257.21,256.22S759.52,643.8,759.25,502,643.79,245.48,502,245.76,245.5,361.22,245.77,503m90.06-.18a166.67,166.67,0,1,1,167,166.34,166.65,166.65,0,0,1-167-166.34"
-                  ></path>
+                    d="M295.42,6c-53.2,2.51-89.53,11-121.29,23.48-32.87,12.81-60.73,30-88.45,57.82S40.89,143,28.17,175.92c-12.31,31.83-20.65,68.19-23,121.42S2.3,367.68,2.56,503.46,3.42,656.26,6,709.6c2.54,53.19,11,89.51,23.48,121.28,12.83,32.87,30,60.72,57.83,88.45S143,964.09,176,976.83c31.8,12.29,68.17,20.67,121.39,23s70.35,2.87,206.09,2.61,152.83-.86,206.16-3.39S799.1,988,830.88,975.58c32.87-12.86,60.74-30,88.45-57.84S964.1,862,976.81,829.06c12.32-31.8,20.69-68.17,23-121.35,2.33-53.37,2.88-70.41,2.62-206.17s-.87-152.78-3.4-206.1-11-89.53-23.47-121.32c-12.85-32.87-30-60.7-57.82-88.45S862,40.87,829.07,28.19c-31.82-12.31-68.17-20.7-121.39-23S637.33,2.3,501.54,2.56,348.75,3.4,295.42,6m5.84,903.88c-48.75-2.12-75.22-10.22-92.86-17-23.36-9-40-19.88-57.58-37.29s-28.38-34.11-37.5-57.42c-6.85-17.64-15.1-44.08-17.38-92.83-2.48-52.69-3-68.51-3.29-202s.22-149.29,2.53-202c2.08-48.71,10.23-75.21,17-92.84,9-23.39,19.84-40,37.29-57.57s34.1-28.39,57.43-37.51c17.62-6.88,44.06-15.06,92.79-17.38,52.73-2.5,68.53-3,202-3.29s149.31.21,202.06,2.53c48.71,2.12,75.22,10.19,92.83,17,23.37,9,40,19.81,57.57,37.29s28.4,34.07,37.52,57.45c6.89,17.57,15.07,44,17.37,92.76,2.51,52.73,3.08,68.54,3.32,202s-.23,149.31-2.54,202c-2.13,48.75-10.21,75.23-17,92.89-9,23.35-19.85,40-37.31,57.56s-34.09,28.38-57.43,37.5c-17.6,6.87-44.07,15.07-92.76,17.39-52.73,2.48-68.53,3-202.05,3.29s-149.27-.25-202-2.53m407.6-674.61a60,60,0,1,0,59.88-60.1,60,60,0,0,0-59.88,60.1M245.77,503c.28,141.8,115.44,256.49,257.21,256.22S759.52,643.8,759.25,502,643.79,245.48,502,245.76,245.5,361.22,245.77,503m90.06-.18a166.67,166.67,0,1,1,167,166.34,166.65,166.65,0,0,1-167-166.34">
+                  </path>
                 </svg>
               </a>
             </li>
             <li class="mr-5 text-xs shrink-0">
-              <a
-                class="block hover:text-slate-200"
-                href="#"
-                target="_blank"
-                rel="noreferrer noopener"
-                aria-label="Goodreads (opens in a new tab)"
-                title="Goodreads"
-              >
-                
+              <a class="block hover:text-slate-200" href="#" target="_blank" rel="noreferrer noopener"
+                aria-label="Goodreads (opens in a new tab)" title="Goodreads">
+
               </a>
             </li>
           </ul>
@@ -244,40 +179,33 @@
         <!-- main content starts -->
         <main id="content" class="pt-24 lg:w-1/2 lg:py-24">
           <!-- about me section -->
-          <section
-            id="about"
-            class="mb-16 scroll-mt-16 md:mb-24 lg:mb-36 lg:scroll-mt-24"
-            aria-label="About me"
-          >
+          <section id="about" class="mb-16 scroll-mt-16 md:mb-24 lg:mb-36 lg:scroll-mt-24" aria-label="About me">
             <div
-              class="sticky top-0 z-20 -mx-6 mb-4 w-screen bg-slate-900/75 px-6 py-5 backdrop-blur md:-mx-12 md:px-12 lg:sr-only lg:relative lg:top-auto lg:mx-auto lg:w-full lg:px-0 lg:py-0 lg:opacity-0"
-            >
-              <h2
-                class="text-sm font-bold uppercase tracking-widest text-slate-200 lg:sr-only"
-              >
+              class="sticky top-0 z-20 -mx-6 mb-4 w-screen bg-slate-900/75 px-6 py-5 backdrop-blur md:-mx-12 md:px-12 lg:sr-only lg:relative lg:top-auto lg:mx-auto lg:w-full lg:px-0 lg:py-0 lg:opacity-0">
+              <h2 class="text-sm font-bold uppercase tracking-widest text-slate-200 lg:sr-only">
                 About
               </h2>
             </div>
             <div>
               <p class="mb-4">
-                As a computer science engineering student, I have cultivated a diverse skill set and a passion for innovation in technology. Through coursework, I have gained proficiency in programming languages such as Python, Java, and C++, along with hands-on experience in web programming, database management, and system design. Additionally, I have contributed to open-source projects, collaborated with peers on hackathon initiatives, and actively engaged in continuous learning through online courses and workshops. With a strong foundation in computer science principles and a drive for creative problem-solving, I am eager to leverage my skills and contribute to impactful projects in the field of technology. 
-                 
+                As a computer science engineering student, I have cultivated a diverse skill set and a passion for
+                innovation in technology. Through coursework, I have gained proficiency in programming languages such as
+                Python, Java, and C++, along with hands-on experience in web programming, database management, and
+                system design. Additionally, I have contributed to open-source projects, collaborated with peers on
+                hackathon initiatives, and actively engaged in continuous learning through online courses and workshops.
+                With a strong foundation in computer science principles and a drive for creative problem-solving, I am
+                eager to leverage my skills and contribute to impactful projects in the field of technology.
+
               </p>
             </div>
           </section>
 
           <!-- expriences section -->
-          <section
-            id="Educational Qualifications"
-            class="mb-16 scroll-mt-16 md:mb-24 lg:mb-36 lg:scroll-mt-24"
-            aria-label="Educational Qualifications"
-          >
+          <section id="educational-qualifications" class="mb-16 scroll-mt-16 md:mb-24 lg:mb-36 lg:scroll-mt-24"
+            aria-label="Educational Qualifications">
             <div
-              class="sticky top-0 z-20 -mx-6 mb-4 w-screen bg-slate-900/75 px-6 py-5 backdrop-blur md:-mx-12 md:px-12 lg:sr-only lg:relative lg:top-auto lg:mx-auto lg:w-full lg:px-0 lg:py-0 lg:opacity-0"
-            >
-              <h2
-                class="text-sm font-bold uppercase tracking-widest text-slate-200 lg:sr-only"
-              >
+              class="sticky top-0 z-20 -mx-6 mb-4 w-screen bg-slate-900/75 px-6 py-5 backdrop-blur md:-mx-12 md:px-12 lg:sr-only lg:relative lg:top-auto lg:mx-auto lg:w-full lg:px-0 lg:py-0 lg:opacity-0">
+              <h2 class="text-sm font-bold uppercase tracking-widest text-slate-200 lg:sr-only">
                 Educational Qualifications
               </h2>
             </div>
@@ -285,47 +213,34 @@
               <ol class="group/list">
                 <li class="mb-12">
                   <div
-                    class="group relative grid pb-1 transition-all sm:grid-cols-8 sm:gap-8 md:gap-4 lg:hover:!opacity-100 lg:group-hover/list:opacity-50"
-                  >
+                    class="group relative grid pb-1 transition-all sm:grid-cols-8 sm:gap-8 md:gap-4 lg:hover:!opacity-100 lg:group-hover/list:opacity-50">
                     <div
-                      class="absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-md transition motion-reduce:transition-none lg:-inset-x-6 lg:block lg:group-hover:bg-slate-800/50 lg:group-hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] lg:group-hover:drop-shadow-lg"
-                    ></div>
+                      class="absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-md transition motion-reduce:transition-none lg:-inset-x-6 lg:block lg:group-hover:bg-slate-800/50 lg:group-hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] lg:group-hover:drop-shadow-lg">
+                    </div>
                     <header
                       class="z-10 mb-2 mt-1 text-xs font-semibold uppercase tracking-wide text-slate-500 sm:col-span-2"
-                      aria-label="2022 to Present"
-                    >
+                      aria-label="2022 to Present">
                       2022 — Present
                     </header>
                     <div class="z-10 sm:col-span-6">
                       <h3 class="font-medium leading-snug text-slate-200">
                         <div>
-                          <a
-                            class="inline-flex items-baseline font-medium leading-tight text-slate-200 hover:text-teal-300 focus-visible:text-teal-300 group/link text-base"
-                            href="#"
-                            target="_blank"
-                            rel="noreferrer noopener"
-                            aria-label=" Bachelors in Computer Science Engineering"
-                          >
+                          <a class="inline-flex items-baseline font-medium leading-tight text-slate-200 hover:text-teal-300 focus-visible:text-teal-300 group/link text-base"
+                            href="#" target="_blank" rel="noreferrer noopener"
+                            aria-label=" Bachelors in Computer Science Engineering">
                             <span
-                              class="absolute -inset-x-4 -inset-y-2.5 hidden rounded md:-inset-x-6 md:-inset-y-4 lg:block"
-                            ></span>
+                              class="absolute -inset-x-4 -inset-y-2.5 hidden rounded md:-inset-x-6 md:-inset-y-4 lg:block"></span>
                             <span>
                               Bachelors in Computer Science Engineering .
                               <!-- -->
                               <span class="inline-block">
                                 VIT,Vellore
-                                <svg
-                                  xmlns="https://vit.ac.in/"
-                                  viewBox="0 0 20 20"
-                                  fill="currentColor"
+                                <svg xmlns="https://vit.ac.in/" viewBox="0 0 20 20" fill="currentColor"
                                   class="inline-block h-4 w-4 shrink-0 transition-transform group-hover/link:-translate-y-1 group-hover/link:translate-x-1 group-focus-visible/link:-translate-y-1 group-focus-visible/link:translate-x-1 motion-reduce:transition-none ml-1 translate-y-px"
-                                  aria-hidden="true"
-                                >
-                                  <path
-                                    fill-rule="evenodd"
+                                  aria-hidden="true">
+                                  <path fill-rule="evenodd"
                                     d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z"
-                                    clip-rule="evenodd"
-                                  ></path>
+                                    clip-rule="evenodd"></path>
                                 </svg>
                               </span>
                             </span>
@@ -338,79 +253,74 @@
                         </div>
                       </h3>
                       <p class="mt-2 text-sm leading-normal">
-                        As a computer science student at VIT Vellore, I've thrived in an environment that blends rigorous academics with practical learning experiences. Collaborating on diverse projects, participating in hackathons, and engaging in research have honed my problem-solving abilities and expanded my technical skill set. VIT's comprehensive curriculum and cutting-edge facilities have provided a solid foundation in key areas like algorithms, programming languages, and software engineering. Beyond the classroom, involvement in clubs, competitions, and workshops has enriched my learning journey, fostering personal and professional growth. Overall, my time at VIT Vellore has equipped me with the expertise and confidence to excel in the dynamic field of computer science.
+                        As a computer science student at VIT Vellore, I've thrived in an environment that blends
+                        rigorous academics with practical learning experiences. Collaborating on diverse projects,
+                        participating in hackathons, and engaging in research have honed my problem-solving abilities
+                        and expanded my technical skill set. VIT's comprehensive curriculum and cutting-edge facilities
+                        have provided a solid foundation in key areas like algorithms, programming languages, and
+                        software engineering. Beyond the classroom, involvement in clubs, competitions, and workshops
+                        has enriched my learning journey, fostering personal and professional growth. Overall, my time
+                        at VIT Vellore has equipped me with the expertise and confidence to excel in the dynamic field
+                        of computer science.
                       </p>
-                      <ul
-                        class="mt-2 flex flex-wrap"
-                        aria-label="Technologies used"
-                      >
+                      <ul class="mt-2 flex flex-wrap" aria-label="Technologies used">
                         <li class="mr-1.5 mt-2">
                           <div
-                            class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300"
-                          >
+                            class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300">
                             JavaScript
                           </div>
                         </li>
                         <li class="mr-1.5 mt-2">
                           <div
-                            class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300"
-                          >
+                            class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300">
                             TypeScript
                           </div>
                         </li>
                         <li class="mr-1.5 mt-2">
                           <div
-                            class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300"
-                          >
+                            class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300">
                             HTML &amp;SCSS
                           </div>
                         </li>
                         <li class="mr-1.5 mt-2">
                           <div
-                            class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300"
-                          >
+                            class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300">
                             React
                           </div>
                         </li>
                         <li class="mr-1.5 mt-2">
                           <div
-                            class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300"
-                          >
+                            class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300">
                             Next.js
                           </div>
                         </li>
                         <li class="mr-1.5 mt-2">
                           <div
-                            class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300"
-                          >
+                            class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300">
                             React Native
                           </div>
                         </li>
                         <li class="mr-1.5 mt-2">
                           <div
-                            class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300"
-                          >
+                            class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300">
                             WordPress
                           </div>
                         </li>
                         <li class="mr-1.5 mt-2">
                           <div
-                            class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300"
-                          >
+                            class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300">
                             Contentful
                           </div>
                         </li>
                         <li class="mr-1.5 mt-2">
                           <div
-                            class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300"
-                          >
+                            class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300">
                             Node.js
                           </div>
                         </li>
                         <li class="mr-1.5 mt-2">
                           <div
-                            class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300"
-                          >
+                            class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300">
                             PHP
                           </div>
                         </li>
@@ -420,47 +330,34 @@
                 </li>
                 <li class="mb-12">
                   <div
-                    class="group relative grid pb-1 transition-all sm:grid-cols-8 sm:gap-8 md:gap-4 lg:hover:!opacity-100 lg:group-hover/list:opacity-50"
-                  >
+                    class="group relative grid pb-1 transition-all sm:grid-cols-8 sm:gap-8 md:gap-4 lg:hover:!opacity-100 lg:group-hover/list:opacity-50">
                     <div
-                      class="absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-md transition motion-reduce:transition-none lg:-inset-x-6 lg:block lg:group-hover:bg-slate-800/50 lg:group-hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] lg:group-hover:drop-shadow-lg"
-                    ></div>
+                      class="absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-md transition motion-reduce:transition-none lg:-inset-x-6 lg:block lg:group-hover:bg-slate-800/50 lg:group-hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] lg:group-hover:drop-shadow-lg">
+                    </div>
                     <header
                       class="z-10 mb-2 mt-1 text-xs font-semibold uppercase tracking-wide text-slate-500 sm:col-span-2"
-                      aria-label="2020-2022"
-                    >
+                      aria-label="2020-2022">
                       2020-2022
                     </header>
                     <div class="z-10 sm:col-span-6">
                       <h3 class="font-medium leading-snug text-slate-200">
                         <div>
-                          <a
-                            class="inline-flex items-baseline font-medium leading-tight text-slate-200 hover:text-teal-300 focus-visible:text-teal-300 group/link text-base"
-                            href="#"
-                            target="_blank"
-                            rel="noreferrer noopener"
-                            aria-label="Senior Secondary Educational (opens in a new tab)"
-                          >
+                          <a class="inline-flex items-baseline font-medium leading-tight text-slate-200 hover:text-teal-300 focus-visible:text-teal-300 group/link text-base"
+                            href="#" target="_blank" rel="noreferrer noopener"
+                            aria-label="Senior Secondary Educational (opens in a new tab)">
                             <span
-                              class="absolute -inset-x-4 -inset-y-2.5 hidden rounded md:-inset-x-6 md:-inset-y-4 lg:block"
-                            ></span>
+                              class="absolute -inset-x-4 -inset-y-2.5 hidden rounded md:-inset-x-6 md:-inset-y-4 lg:block"></span>
                             <span>
                               Senior Secondary Education ·
                               <!-- -->
                               <span class="inline-block">
                                 Delhi Public School,E-city
-                                <svg
-                                  xmlns="https://www.dpsecity.com/"
-                                  viewBox="0 0 20 20"
-                                  fill="currentColor"
+                                <svg xmlns="https://www.dpsecity.com/" viewBox="0 0 20 20" fill="currentColor"
                                   class="inline-block h-4 w-4 shrink-0 transition-transform group-hover/link:-translate-y-1 group-hover/link:translate-x-1 group-focus-visible/link:-translate-y-1 group-focus-visible/link:translate-x-1 motion-reduce:transition-none ml-1 translate-y-px"
-                                  aria-hidden="true"
-                                >
-                                  <path
-                                    fill-rule="evenodd"
+                                  aria-hidden="true">
+                                  <path fill-rule="evenodd"
                                     d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z"
-                                    clip-rule="evenodd"
-                                  ></path>
+                                    clip-rule="evenodd"></path>
                                 </svg>
                               </span>
                             </span>
@@ -468,54 +365,43 @@
                         </div>
                       </h3>
                       <p class="mt-2 text-sm leading-normal">
-                        I finished my senior secondary education under the CBSE board at DPS, E-city, Bengaluru. I achieved a remarkable 98% in the 12th grade, specializing in PCM+CS. I actively participated in numerous interschool competitions, securing prizes along the way.
+                        I finished my senior secondary education under the CBSE board at DPS, E-city, Bengaluru. I
+                        achieved a remarkable 98% in the 12th grade, specializing in PCM+CS. I actively participated in
+                        numerous interschool competitions, securing prizes along the way.
                       </p>
                     </div>
                   </div>
                 </li>
                 <li class="mb-12">
                   <div
-                    class="group relative grid pb-1 transition-all sm:grid-cols-8 sm:gap-8 md:gap-4 lg:hover:!opacity-100 lg:group-hover/list:opacity-50"
-                  >
+                    class="group relative grid pb-1 transition-all sm:grid-cols-8 sm:gap-8 md:gap-4 lg:hover:!opacity-100 lg:group-hover/list:opacity-50">
                     <div
-                      class="absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-md transition motion-reduce:transition-none lg:-inset-x-6 lg:block lg:group-hover:bg-slate-800/50 lg:group-hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] lg:group-hover:drop-shadow-lg"
-                    ></div>
+                      class="absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-md transition motion-reduce:transition-none lg:-inset-x-6 lg:block lg:group-hover:bg-slate-800/50 lg:group-hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] lg:group-hover:drop-shadow-lg">
+                    </div>
                     <header
                       class="z-10 mb-2 mt-1 text-xs font-semibold uppercase tracking-wide text-slate-500 sm:col-span-2"
-                      aria-label="2020"
-                    >
+                      aria-label="2020">
                       2020
                     </header>
                     <div class="z-10 sm:col-span-6">
                       <h3 class="font-medium leading-snug text-slate-200">
                         <div>
-                          <a
-                            class="inline-flex items-baseline font-medium leading-tight text-slate-200 hover:text-teal-300 focus-visible:text-teal-300 group/link text-base"
-                            href="#"
-                            target="_blank"
-                            rel="noreferrer noopener"
-                            aria-label="seondary education (opens in a new tab)"
-                          >
+                          <a class="inline-flex items-baseline font-medium leading-tight text-slate-200 hover:text-teal-300 focus-visible:text-teal-300 group/link text-base"
+                            href="#" target="_blank" rel="noreferrer noopener"
+                            aria-label="seondary education (opens in a new tab)">
                             <span
-                              class="absolute -inset-x-4 -inset-y-2.5 hidden rounded md:-inset-x-6 md:-inset-y-4 lg:block"
-                            ></span>
+                              class="absolute -inset-x-4 -inset-y-2.5 hidden rounded md:-inset-x-6 md:-inset-y-4 lg:block"></span>
                             <span>
-                              Secondary education · 
+                              Secondary education ·
                               <!-- -->
                               <span class="inline-block">
                                 Delhi Public School,E-city
-                                <svg
-                                  xmlns="https://www.dpsecity.com/"
-                                  viewBox="0 0 20 20"
-                                  fill="currentColor"
+                                <svg xmlns="https://www.dpsecity.com/" viewBox="0 0 20 20" fill="currentColor"
                                   class="inline-block h-4 w-4 shrink-0 transition-transform group-hover/link:-translate-y-1 group-hover/link:translate-x-1 group-focus-visible/link:-translate-y-1 group-focus-visible/link:translate-x-1 motion-reduce:transition-none ml-1 translate-y-px"
-                                  aria-hidden="true"
-                                >
-                                  <path
-                                    fill-rule="evenodd"
+                                  aria-hidden="true">
+                                  <path fill-rule="evenodd"
                                     d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z"
-                                    clip-rule="evenodd"
-                                  ></path>
+                                    clip-rule="evenodd"></path>
                                 </svg>
                               </span>
                             </span>
@@ -523,8 +409,10 @@
                         </div>
                       </h3>
                       <p class="mt-2 text-sm leading-normal">
-                        Achieved a top score of 98.6%, ranking as the highest scorer in both Bengaluru and Mysore. Actively engaged in Model Parliament, where I was honored with the Best Delegate award, as well as participated in Model United Nations, alongside various quiz competitions and workshops.
-                      </p> 
+                        Achieved a top score of 98.6%, ranking as the highest scorer in both Bengaluru and Mysore.
+                        Actively engaged in Model Parliament, where I was honored with the Best Delegate award, as well
+                        as participated in Model United Nations, alongside various quiz competitions and workshops.
+                      </p>
                     </div>
                   </div>
                 </li>
@@ -532,17 +420,11 @@
           </section>
 
           <!-- skills section -->
-          <section
-            id="skills"
-            class="mb-16 scroll-mt-16 md:mb-24 lg:mb-36 lg:scroll-mt-24"
-            aria-label="Selected skills"
-          >
+          <section id="skills" class="mb-16 scroll-mt-16 md:mb-24 lg:mb-36 lg:scroll-mt-24"
+            aria-label="Selected skills">
             <div
-              class="sticky top-0 z-20 -mx-6 mb-4 w-screen bg-slate-900/75 px-6 py-5 backdrop-blur md:-mx-12 md:px-12 lg:sr-only lg:relative lg:top-auto lg:mx-auto lg:w-full lg:px-0 lg:py-0 lg:opacity-0"
-            >
-              <h2
-                class="text-sm font-bold uppercase tracking-widest text-slate-200 lg:sr-only"
-              >
+              class="sticky top-0 z-20 -mx-6 mb-4 w-screen bg-slate-900/75 px-6 py-5 backdrop-blur md:-mx-12 md:px-12 lg:sr-only lg:relative lg:top-auto lg:mx-auto lg:w-full lg:px-0 lg:py-0 lg:opacity-0">
+              <h2 class="text-sm font-bold uppercase tracking-widest text-slate-200 lg:sr-only">
                 Skills
               </h2>
             </div>
@@ -551,92 +433,63 @@
               <ul class="group/list">
                 <li class="mb-12">
                   <div
-                    class="group relative grid gap-4 pb-1 transition-all sm:grid-cols-8 sm:gap-8 md:gap-4 lg:hover:!opacity-100 lg:group-hover/list:opacity-50"
-                  >
+                    class="group relative grid gap-4 pb-1 transition-all sm:grid-cols-8 sm:gap-8 md:gap-4 lg:hover:!opacity-100 lg:group-hover/list:opacity-50">
                     <div
-                      class="absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-md transition motion-reduce:transition-none lg:-inset-x-6 lg:block lg:group-hover:bg-slate-800/50 lg:group-hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] lg:group-hover:drop-shadow-lg"
-                    ></div>
+                      class="absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-md transition motion-reduce:transition-none lg:-inset-x-6 lg:block lg:group-hover:bg-slate-800/50 lg:group-hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] lg:group-hover:drop-shadow-lg">
+                    </div>
                     <div class="z-10 sm:order-2 sm:col-span-6">
                       <h3>
-                        <a
-                          class="inline-flex items-baseline font-medium leading-tight text-slate-200 hover:text-teal-300 focus-visible:text-teal-300 group/link text-base"
-                          href="#"
-                          target="_blank"
-                          rel="noreferrer noopener"
-                          aria-label="Technical Skills (opens in a new tab)"
-                        >
+                        <a class="inline-flex items-baseline font-medium leading-tight text-slate-200 hover:text-teal-300 focus-visible:text-teal-300 group/link text-base"
+                          href="#" target="_blank" rel="noreferrer noopener"
+                          aria-label="Technical Skills (opens in a new tab)">
                           <span
-                            class="absolute -inset-x-4 -inset-y-2.5 hidden rounded md:-inset-x-6 md:-inset-y-4 lg:block"
-                          ></span>
+                            class="absolute -inset-x-4 -inset-y-2.5 hidden rounded md:-inset-x-6 md:-inset-y-4 lg:block"></span>
                           <span>
                             C
                             <!-- -->
                             <span class="inline-block">
-                              
-                              <svg
-                                xmlns="https://devdocs.io/c/"
-                                viewBox="0 0 20 20"
-                                fill="currentColor"
+
+                              <svg xmlns="https://devdocs.io/c/" viewBox="0 0 20 20" fill="currentColor"
                                 class="inline-block h-4 w-4 shrink-0 transition-transform group-hover/link:-translate-y-1 group-hover/link:translate-x-1 group-focus-visible/link:-translate-y-1 group-focus-visible/link:translate-x-1 motion-reduce:transition-none ml-1 translate-y-px"
-                                aria-hidden="true"
-                              >
-                                <path
-                                  fill-rule="evenodd"
+                                aria-hidden="true">
+                                <path fill-rule="evenodd"
                                   d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z"
-                                  clip-rule="evenodd"
-                                ></path>
+                                  clip-rule="evenodd"></path>
                               </svg>
                             </span>
                           </span>
                         </a>
                       </h3>
                     </div>
-                    <img
-                      loading="lazy"
-                      width="200"
-                      height="48"
+                    <img loading="lazy" width="200" height="48"
                       class="rounded border-2 border-slate-200/10 transition group-hover:border-slate-200/30 sm:order-1 sm:col-span-2 sm:translate-y-1"
                       style="color: transparent"
                       src="https://imgs.search.brave.com/3SbpPhzanKC_O2ZnGdCV1HDc9rpjoSPkIAGQhoPn2ek/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZWVrc2Zvcmdl/ZWtzLm9yZy93cC1j/b250ZW50L3VwbG9h/ZHMvMjAyMzA1MDYx/MTI4MTQvQy1Qcm9n/cmFtbWluZy1MYW5n/dWFnZS5wbmc"
-                      alt=""
-                    />
+                      alt="" />
                   </div>
                 </li>
                 <li class="mb-12">
                   <div
-                    class="group relative grid gap-4 pb-1 transition-all sm:grid-cols-8 sm:gap-8 md:gap-4 lg:hover:!opacity-100 lg:group-hover/list:opacity-50"
-                  >
+                    class="group relative grid gap-4 pb-1 transition-all sm:grid-cols-8 sm:gap-8 md:gap-4 lg:hover:!opacity-100 lg:group-hover/list:opacity-50">
                     <div
-                      class="absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-md transition motion-reduce:transition-none lg:-inset-x-6 lg:block lg:group-hover:bg-slate-800/50 lg:group-hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] lg:group-hover:drop-shadow-lg"
-                    ></div>
+                      class="absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-md transition motion-reduce:transition-none lg:-inset-x-6 lg:block lg:group-hover:bg-slate-800/50 lg:group-hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] lg:group-hover:drop-shadow-lg">
+                    </div>
                     <div class="z-10 sm:order-2 sm:col-span-6">
                       <h3>
-                        <a
-                          class="inline-flex items-baseline font-medium leading-tight text-slate-200 hover:text-teal-300 focus-visible:text-teal-300 group/link text-base"
-                          href="#"
-                          target="_blank"
-                          rel="noreferrer noopener"
-                          aria-label="C++"
-                        >
+                        <a class="inline-flex items-baseline font-medium leading-tight text-slate-200 hover:text-teal-300 focus-visible:text-teal-300 group/link text-base"
+                          href="#" target="_blank" rel="noreferrer noopener" aria-label="C++">
                           <span
-                            class="absolute -inset-x-4 -inset-y-2.5 hidden rounded md:-inset-x-6 md:-inset-y-4 lg:block"
-                          ></span>
+                            class="absolute -inset-x-4 -inset-y-2.5 hidden rounded md:-inset-x-6 md:-inset-y-4 lg:block"></span>
                           <span>
                             C++
                             <!-- -->
                             <span class="inline-block">
-                              <svg
-                                xmlns="https://devdocs.io/cpp/"
-                                viewBox="0 0 20 20"
-                                fill="currentColor"
+                              <svg xmlns="https://devdocs.io/cpp/" viewBox="0 0 20 20" fill="currentColor"
                                 class="inline-block h-4 w-4 shrink-0 transition-transform group-hover/link:-translate-y-1 group-hover/link:translate-x-1 group-focus-visible/link:-translate-y-1 group-focus-visible/link:translate-x-1 motion-reduce:transition-none ml-1 translate-y-px"
-                                aria-hidden="true"
-                              >
-                                <path
-                                  fill-rule="evenodd"
+                                aria-hidden="true">
+                                <path fill-rule="evenodd"
                                   d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z"
-                                  clip-rule="evenodd"
-                                ></path>
+                                  clip-rule="evenodd"></path>
                               </svg>
                             </span>
                           </span>
@@ -645,198 +498,144 @@
                     </div>
                     <img
                       src="https://imgs.search.brave.com/fCOM5YDjYI8mLjGDIZM8zM0R2AM3WUuSaVrS52Z8agI/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9zdHls/ZXMucmVkZGl0bWVk/aWEuY29tL3Q1XzJx/aTI3L3N0eWxlcy9j/b21tdW5pdHlJY29u/X2M2bXR2Z2ozOGtp/MzEuanBnP2Zvcm1h/dD1wanBnJnM9N2M5/YTE1N2E5NzM3OTJk/MzE1ZDU0MDc1ZDhh/Yjc4MDBhYjQ5ZDJm/ZQ"
-                      loading="lazy"
-                      width="200"
-                      height="48"
+                      loading="lazy" width="200" height="48"
                       class="rounded border-2 border-slate-200/10 transition group-hover:border-slate-200/30 sm:order-1 sm:col-span-2 sm:translate-y-1"
-                      style="color: transparent"
-                      alt=""
-                    />
+                      style="color: transparent" alt="" />
                   </div>
                 </li>
                 <li class="mb-12">
                   <div
-                    class="group relative grid gap-4 pb-1 transition-all sm:grid-cols-8 sm:gap-8 md:gap-4 lg:hover:!opacity-100 lg:group-hover/list:opacity-50"
-                  >
+                    class="group relative grid gap-4 pb-1 transition-all sm:grid-cols-8 sm:gap-8 md:gap-4 lg:hover:!opacity-100 lg:group-hover/list:opacity-50">
                     <div
-                      class="absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-md transition motion-reduce:transition-none lg:-inset-x-6 lg:block lg:group-hover:bg-slate-800/50 lg:group-hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] lg:group-hover:drop-shadow-lg"
-                    ></div>
+                      class="absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-md transition motion-reduce:transition-none lg:-inset-x-6 lg:block lg:group-hover:bg-slate-800/50 lg:group-hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] lg:group-hover:drop-shadow-lg">
+                    </div>
                     <div class="z-10 sm:order-2 sm:col-span-6">
                       <h3>
-                        <a
-                          class="inline-flex items-baseline font-medium leading-tight text-slate-200 hover:text-teal-300 focus-visible:text-teal-300 group/link text-base"
-                          href="#"
-                          target="_blank"
-                          rel="noreferrer noopener"
-                          aria-label="Python (opens in a new tab)"
-                        >
+                        <a class="inline-flex items-baseline font-medium leading-tight text-slate-200 hover:text-teal-300 focus-visible:text-teal-300 group/link text-base"
+                          href="#" target="_blank" rel="noreferrer noopener" aria-label="Python (opens in a new tab)">
                           <span
-                            class="absolute -inset-x-4 -inset-y-2.5 hidden rounded md:-inset-x-6 md:-inset-y-4 lg:block"
-                          ></span>
+                            class="absolute -inset-x-4 -inset-y-2.5 hidden rounded md:-inset-x-6 md:-inset-y-4 lg:block"></span>
                           <span>
                             Python
                             <!-- -->
                             <span class="inline-block">
-                              <svg
-                                xmlns="https://docs.python.org/3/"
-                                viewBox="0 0 20 20"
-                                fill="currentColor"
+                              <svg xmlns="https://docs.python.org/3/" viewBox="0 0 20 20" fill="currentColor"
                                 class="inline-block h-4 w-4 shrink-0 transition-transform group-hover/link:-translate-y-1 group-hover/link:translate-x-1 group-focus-visible/link:-translate-y-1 group-focus-visible/link:translate-x-1 motion-reduce:transition-none ml-1 translate-y-px"
-                                aria-hidden="true"
-                              >
-                                <path
-                                  fill-rule="evenodd"
+                                aria-hidden="true">
+                                <path fill-rule="evenodd"
                                   d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z"
-                                  clip-rule="evenodd"
-                                ></path>
+                                  clip-rule="evenodd"></path>
                               </svg>
                             </span>
                           </span>
                         </a>
                       </h3>
-                      <a
-                        class="relative mt-2 inline-flex items-center text-sm font-medium text-slate-300 hover:text-teal-300 focus-visible:text-teal-300"
-                        href="#"
-                        target="_blank"
-                        rel="noreferrer noopener"
-                        aria-label="Over 100,000 installs on Visual Studio Code Marketplace (opens in a new tab)"
-                      >
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          viewBox="0 0 20 20"
-                          fill="currentColor"
-                          class="mr-1 h-4 w-4"
-                          aria-hidden="true"
-                        >
+                      <a class="relative mt-2 inline-flex items-center text-sm font-medium text-slate-300 hover:text-teal-300 focus-visible:text-teal-300"
+                        href="#" target="_blank" rel="noreferrer noopener"
+                        aria-label="Over 100,000 installs on Visual Studio Code Marketplace (opens in a new tab)">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                          class="mr-1 h-4 w-4" aria-hidden="true">
                           <path
-                            d="M10.75 2.75a.75.75 0 00-1.5 0v8.614L6.295 8.235a.75.75 0 10-1.09 1.03l4.25 4.5a.75.75 0 001.09 0l4.25-4.5a.75.75 0 00-1.09-1.03l-2.955 3.129V2.75z"
-                          ></path>
+                            d="M10.75 2.75a.75.75 0 00-1.5 0v8.614L6.295 8.235a.75.75 0 10-1.09 1.03l4.25 4.5a.75.75 0 001.09 0l4.25-4.5a.75.75 0 00-1.09-1.03l-2.955 3.129V2.75z">
+                          </path>
                           <path
-                            d="M3.5 12.75a.75.75 0 00-1.5 0v2.5A2.75 2.75 0 004.75 18h10.5A2.75 2.75 0 0018 15.25v-2.5a.75.75 0 00-1.5 0v2.5c0 .69-.56 1.25-1.25 1.25H4.75c-.69 0-1.25-.56-1.25-1.25v-2.5z"
-                          ></path>
+                            d="M3.5 12.75a.75.75 0 00-1.5 0v2.5A2.75 2.75 0 004.75 18h10.5A2.75 2.75 0 0018 15.25v-2.5a.75.75 0 00-1.5 0v2.5c0 .69-.56 1.25-1.25 1.25H4.75c-.69 0-1.25-.56-1.25-1.25v-2.5z">
+                          </path>
                         </svg>
                         <span>100k+ Installs</span>
                       </a>
                     </div>
                     <img
                       src="https://imgs.search.brave.com/ZJWwTQdlI9Il3tlJJHdDtRpSe63mTQA24Eo93Ks6i18/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9kb2Nz/LnB5dGhvbi5vcmcv/My9fc3RhdGljL3B5/LnN2Zw.svg"
-                      loading="lazy"
-                      width="200"
-                      height="48"
+                      loading="lazy" width="200" height="48"
                       class="rounded border-2 border-slate-200/10 transition group-hover:border-slate-200/30 sm:order-1 sm:col-span-2 sm:translate-y-1"
-                      style="color: transparent"
-                      alt=""
-                    />
+                      style="color: transparent" alt="" />
                   </div>
                 </li>
                 <li class="mb-12">
                   <div
-                    class="group relative grid gap-4 pb-1 transition-all sm:grid-cols-8 sm:gap-8 md:gap-4 lg:hover:!opacity-100 lg:group-hover/list:opacity-50"
-                  >
+                    class="group relative grid gap-4 pb-1 transition-all sm:grid-cols-8 sm:gap-8 md:gap-4 lg:hover:!opacity-100 lg:group-hover/list:opacity-50">
                     <div
-                      class="absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-md transition motion-reduce:transition-none lg:-inset-x-6 lg:block lg:group-hover:bg-slate-800/50 lg:group-hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] lg:group-hover:drop-shadow-lg"
-                    ></div>
+                      class="absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-md transition motion-reduce:transition-none lg:-inset-x-6 lg:block lg:group-hover:bg-slate-800/50 lg:group-hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] lg:group-hover:drop-shadow-lg">
+                    </div>
                     <div class="z-10 sm:order-2 sm:col-span-6">
                       <h3>
-                        <a
-                          class="inline-flex items-baseline font-medium leading-tight text-slate-200 hover:text-teal-300 focus-visible:text-teal-300 group/link text-base"
-                          href="#"
-                          target="_blank"
-                          rel="noreferrer noopener"
-                          aria-label="git and GitHub (opens in a new tab)"
-                        >
+                        <a class="inline-flex items-baseline font-medium leading-tight text-slate-200 hover:text-teal-300 focus-visible:text-teal-300 group/link text-base"
+                          href="https://github.com/SanchitaJindal" target="_blank" rel="noreferrer noopener"
+                          aria-label="git and GitHub (opens in a new tab)">
                           <span
-                            class="absolute -inset-x-4 -inset-y-2.5 hidden rounded md:-inset-x-6 md:-inset-y-4 lg:block"
-                          ></span>
+                            class="absolute -inset-x-4 -inset-y-2.5 hidden rounded md:-inset-x-6 md:-inset-y-4 lg:block"></span>
                           <span>
                             Git and GitHub
                             <!-- -->
                             <span class="inline-block">
-                          
-                              <svg
-                                xmlns="https://git-scm.com/"
-                                viewBox="0 0 20 20"
-                                fill="currentColor"
+
+                              <svg xmlns="https://git-scm.com/" viewBox="0 0 20 20" fill="currentColor"
                                 class="inline-block h-4 w-4 shrink-0 transition-transform group-hover/link:-translate-y-1 group-hover/link:translate-x-1 group-focus-visible/link:-translate-y-1 group-focus-visible/link:translate-x-1 motion-reduce:transition-none ml-1 translate-y-px"
-                                aria-hidden="true"
-                              >
-                                <path
-                                  fill-rule="evenodd"
+                                aria-hidden="true">
+                                <path fill-rule="evenodd"
                                   d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z"
-                                  clip-rule="evenodd"
-                                ></path>
+                                  clip-rule="evenodd"></path>
                               </svg>
                             </span>
                           </span>
                         </a>
                       </h3>
 
-                      
+
                     </div>
                     <img
                       src="https://imgs.search.brave.com/Vctax5T0FXFiQOrVfWZqYygaJ1qQT4XwFDLFnvmRrrU/rs:fit:500:0:0/g:ce/aHR0cHM6Ly8xMDAw/bG9nb3MubmV0L3dw/LWNvbnRlbnQvdXBs/b2Fkcy8yMDE4LzEx/L0dpdEh1Yi1sb2dv/LTUwMHgyODkuanBn"
-                      loading="lazy"
-                      width="200"
-                      height="48"
+                      loading="lazy" width="200" height="48"
                       class="rounded border-2 border-slate-200/10 transition group-hover:border-slate-200/30 sm:order-1 sm:col-span-2 sm:translate-y-1"
-                      style="color: transparent"
-                      alt=""
-                    />
+                      style="color: transparent" alt="" />
                   </div>
                 </li>
               </ul>
 
-                      
-                        
-                      </svg>
-                    </span>
-                  </span>
-                </a>
+
+
+              </svg>
+              </span>
+              </span>
+              </a>
+            </div>
+            <form id="form" action="" class="flex flex-col gap-4">
+              <div class="w-full">
+                <label for="name">Name</label>
+                <input class="px-2 py-2 w-full" id="name" placeholder="Enter your name here" type="text">
               </div>
-            </div>
-          </section>
+              <div>
+                <label for="email">Email</label>
+                <input class="px-2 py-2 w-full" id="email" placeholder="Enter your email here" type="email">
+              </div>
+              <div>
+                <label for="number">Contact Number</label>
+                <input class="px-2 py-2 w-full" id="number" placeholder="Enter your contact number here" type="text">
+              </div>
+              <button id="form-button" class="border-2 px-2 py-2 mt-1" type="submit">Get In Touch</button>
+            </form>
+      </div>
+      </section>
 
-          <!-- soft skills section -->
-          <section
-            id="soft skills"
-            class="mb-16 scroll-mt-16 md:mb-24 lg:mb-36 lg:scroll-mt-24"
-            aria-label="soft skills"
-          >
-            <div
-              class="sticky top-0 z-20 -mx-6 mb-4 w-screen bg-slate-900/75 px-6 py-5 backdrop-blur md:-mx-12 md:px-12 lg:sr-only lg:relative lg:top-auto lg:mx-auto lg:w-full lg:px-0 lg:py-0 lg:opacity-0"
-            >
-              <h2
-                class="text-sm font-bold uppercase tracking-widest text-slate-200 lg:sr-only"
-              >
-                Soft Skills
-              </h2>
-              <p>
-                With excellent communication skills and proficiency in multitasking and handling pressure, I bring a dynamic approach to every task. Fluent in English, Hindi, German, and Spanish, I thrive in diverse environments and effectively collaborate across linguistic and cultural boundaries. My ability to adapt quickly and efficiently enables me to excel in challenging situations, while my strong communication skills facilitate seamless interaction and collaboration with colleagues and stakeholders.
-              </p>
-            </div>
-          </section>
 
-          
-        <!-- button btn -->
-        <div>
-          <button
-            class="hover:-text-teal-300 absolute bottom-0 right-0 inline-flex items-center px-2 py-4 font-medium text-slate-400 hover:-translate-y-2 focus-visible:text-teal-300"
-            type="button"
-            aria-haspopup="dialog"
-            aria-expanded="false"
-            aria-controls="radix-:R4l6:"
-            data-state="closed"
-          >
+      <!-- button btn -->
+      <div>
+        <button
+          class="hover:-text-teal-300 absolute bottom-0 right-0 inline-flex items-center px-2 py-4 font-medium text-slate-400 hover:-translate-y-2 focus-visible:text-teal-300"
+          type="button" aria-haspopup="dialog" aria-expanded="false" aria-controls="radix-:R4l6:" data-state="closed">
         </button>
-        <p style="color: white;" id="visitorCount" class="visitorCount"></p>      
-        </div>
+        <p style="color: white;" id="visitorCount" class="visitorCount"></p>
       </div>
     </div>
   </div>
+  </div>
 
-    <!-- cursor -->
-    <div class="cursor"></div>
-    <!-- js script -->
-    <script src="js/app.js"></script>
-  </body>
+  <!-- cursor -->
+  <div class="cursor"></div>
+  <div class="fixed top-0 right-0" id="form-submit-success">Form has been submitted</div>
+  <!-- js script -->
+  <script src="js/app.js"></script>
+</body>
+
 </html>
